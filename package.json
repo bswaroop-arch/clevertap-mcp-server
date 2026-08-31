@@ -1,0 +1,29 @@
+{
+  "name": "clevertap-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for CleverTap — campaign configuration, data extraction, and event schema introspection.",
+  "type": "module",
+  "bin": {
+    "clevertap-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "csv-parse": "^5.5.6",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

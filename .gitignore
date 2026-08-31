@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+data/events_schema.json
+*.log
+.DS_Store
